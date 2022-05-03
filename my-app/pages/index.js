@@ -342,11 +342,11 @@ export default function Home() {
             You have:
             <br />
             {/* Convert the BigNumber to string using the formatEther function from ethers.js */}
-            {utils.formatEther(cdBalance)} Crypto Dev Tokens
+            <strong>{utils.formatEther(cdBalance)}</strong> Crypto Dev Tokens
             <br />
-            {utils.formatEther(ethBalance)} Ether
+            <strong>{utils.formatEther(ethBalance)}</strong> Ether
             <br />
-            {utils.formatEther(lpBalance)} Crypto Dev LP tokens
+            <strong>{utils.formatEther(lpBalance)}</strong> Crypto Dev LP tokens
           </div>
           <div>
             {/* If reserved CD is zero, render the state for liquidity zero where we ask the user
@@ -479,6 +479,9 @@ export default function Home() {
         <title>Crypto Devs</title>
         <meta name="description" content="Exchange-Dapp" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet" />
       </Head>
       <div className={styles.main}>
         <div>
@@ -512,7 +515,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by Cadu
       </footer>
     </div>
   );
